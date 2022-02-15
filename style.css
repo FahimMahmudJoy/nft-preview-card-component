@@ -42,6 +42,15 @@ hr {
     color: hsl(215, 32%, 27%);
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: hsl(178, 100%, 50%);
+}
+
 main {
     background: hsl(216, 50%, 16%);
     display: flex;
@@ -50,12 +59,40 @@ main {
     width: 340px;
     border-radius: 15px;
     padding: 0.5rem 0;
+    min-height: 400px
+}
+
+.image-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* background: cyan; */
+}
+
+.overlay-logo {
+    position: absolute;
+    width: 3rem;
+    opacity: 0.5;
+    top: 9rem;
+    left: 7.5rem;
+    /* border: 2px solid red; */
+
 }
 
 .main-logo {
     width: 18rem;
     border-radius: 15px;
     margin-top: 20px;
+}
+
+.overlay-logo:hover {
+    opacity: 0.7;
+    width: 18rem;
+    top: 1.3rem;
+    left: 0;
+    background: cyan;
+    cursor: pointer;
+    border-radius: 15px;
 }
 
 .content {
